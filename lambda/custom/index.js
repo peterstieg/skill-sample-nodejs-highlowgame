@@ -111,7 +111,7 @@ const startGameHandlers = Alexa.CreateStateHandler(states.STARTMODE, {
     },
     'AMAZON.NoIntent': function() {
         console.log("NOINTENT");
-        this.response.speak(his.t('START_NO'));
+        this.response.speak(this.t('START_NO'));
         this.emit(':responseReady');
     },
     "AMAZON.StopIntent": function() {
